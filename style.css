@@ -1,0 +1,71 @@
+.copy {
+    max-width: 800px;
+    font-size: calc(0.8rem + 0.8vw);
+}
+
+body {
+    background-color: #FFFEF7;
+}
+
+.bg-img-vertical {
+    right: 0;
+}
+
+.position-bag {
+    right: 50vw;
+
+}
+
+.position {
+    width: 50vw;
+    left: 5vw;
+
+}
+
+.splash_h1 {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: helvetica;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: helvetica;
+    font-weight: 100;
+}
+
+.quote {
+    font-family: helvetica;
+    font-weight: 600;
+    font-size: calc(2rem + 0.8vw);
+    margin: 0;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+.splash {
+    background-image: url(img/landing/mobile/sektion1/mb-bw-baggrund.jpg);
+    background-position: bottom;
+}
+
+
+
+
+
+/*----------MEDIA QUERIES------------*/
+
+@media screen and (min-width: 992px) {
+    .position-bag {
+        right: 22vw;
+        width: 40vw;
+        height: 28vw;
+    }
+}

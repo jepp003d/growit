@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="no-js" lang="da">
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kommen Sense</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="">
+        <div class="container-fluid p-5">
+            <div class="row d-flex justify-content-between">
+                <div class="copy col-8">
+                    <h1 class="heading">GROW IT</h1>
+                    <p class="">You need clothing and we want you to have it. But not at any cost anymore. You have changed that. You and your generation have pushed us to look inwards and you demand that we change. For the better of the world. So we will try our best to live up to you. That is why we have come up with GROW IT. A bag of seeds to be planted anywhere that become plants which increase biodiversity.
+                        We want you on the journey with us. It’s very simple. Plant it, picture it, tag it, repeat. Fulfill missions and earn rewards. For every 1000 #growit seeds planted and tagged we donate 10.000 pounds to our sustainable research facility.
+                        THANK YOU for changing us.
+                    </p>
+                </div>
+
+                <img class="col-4 img-fluid bg-img-vertical align-self-center position-relative" src="annie-spratt-jsHjYUEL1o0-unsplash.jpg" alt="">
+                <img class="img-fluid bg-img-vertical align-self-center position position-absolute" src="bag.png" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container-fluid p-md-5">
+            <div class="row d-flex justify-content-between">
+                <div class="copy col-8">
+                    <h1 class="heading">GROW IT</h1>
+                    <p class="">You need clothing and we want you to have it. But not at any cost anymore. You have changed that. You and your generation have pushed us to look inwards and you demand that we change. For the better of the world. So we will try our best to live up to you. That is why we have come up with GROW IT. A bag of seeds to be planted anywhere that become plants which increase biodiversity.
+                        We want you on the journey with us. It’s very simple. Plant it, picture it, tag it, repeat. Fulfill missions and earn rewards. For every 1000 #growit seeds planted and tagged we donate 10.000 pounds to our sustainable research facility.
+                        THANK YOU for changing us.
+                    </p>
+                </div>
+
+                <img class="col-4 img-fluid bg-img-vertical align-self-center position-relative" src="annie-spratt-jsHjYUEL1o0-unsplash.jpg" alt="">
+                <img class="img-fluid bg-img-vertical align-self-center position position-absolute text-animation-right-2" src="bag.png" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container-fluid p-5">
+            <div class="row d-flex justify-content-between">
+                <div class="copy col-8">
+                    <h1 class="heading">GROW IT</h1>
+                    <p class="">You need clothing and we want you to have it. But not at any cost anymore. You have changed that. You and your generation have pushed us to look inwards and you demand that we change. For the better of the world. So we will try our best to live up to you. That is why we have come up with GROW IT. A bag of seeds to be planted anywhere that become plants which increase biodiversity.
+                        We want you on the journey with us. It’s very simple. Plant it, picture it, tag it, repeat. Fulfill missions and earn rewards. For every 1000 #growit seeds planted and tagged we donate 10.000 pounds to our sustainable research facility.
+                        THANK YOU for changing us.
+                    </p>
+                </div>
+
+                <img class="col-4 img-fluid bg-img-vertical align-self-center position-relative" src="annie-spratt-jsHjYUEL1o0-unsplash.jpg" alt="">
+                <img class="img-fluid bg-img-vertical align-self-center position position-absolute" src="bag.png" alt="">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script src="">
+        gsap.registerPlugin(ScrollTrigger);
+
+        var rellax = new Rellax(".rellax", {
+            center: true,
+        });
+
+
+        gsap.from(".text-animation-right-2", {
+            x: 200,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".text-animation-right-2",
+                ease: "power2.inOut",
+
+
+                start: "top 100%",
+                end: "center 40%",
+                scrub: true,
+
+            }
+        });
+
+    </script>
+</body>
+
+</html>
