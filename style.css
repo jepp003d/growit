@@ -12,15 +12,42 @@ body {
 }
 
 .position-bag {
+
     right: 50vw;
+    bottom: -180vw;
 
 }
 
 .position {
     width: 50vw;
     left: 5vw;
-
 }
+
+.position2 {
+    width: 60vw;
+    left: 5vw;
+    bottom: -325vw;
+}
+
+.position3 {
+    width: 60vw;
+    left: 5vw;
+    bottom: -505vw;
+}
+
+.position4 {
+    width: 60vw;
+    left: 5vw;
+    bottom: -715vw;
+}
+
+.position5 {
+    width: 60vw;
+    left: 5vw;
+    bottom: -876vw;
+}
+
+
 
 .splash_h1 {
     opacity: 0;
