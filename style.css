@@ -13,8 +13,12 @@ body {
 
 .position-bag {
 
-    right: 50vw;
-    bottom: -180vw;
+    width: 50vw;
+            right: 50vw;
+    top: 320vw;
+
+
+
 
 }
 
@@ -26,25 +30,25 @@ body {
 .position2 {
     width: 60vw;
     left: 5vw;
-    bottom: -325vw;
+
 }
 
 .position3 {
     width: 60vw;
     left: 5vw;
-    bottom: -505vw;
+
 }
 
 .position4 {
     width: 60vw;
     left: 5vw;
-    bottom: -715vw;
+
 }
 
 .position5 {
     width: 60vw;
     left: 5vw;
-    bottom: -876vw;
+
 }
 
 
