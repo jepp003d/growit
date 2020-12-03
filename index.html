@@ -45,6 +45,7 @@
     </section>
 
 
+    <!--
     <section class="section1 mb-5">
         <div class="container-fluid p-md-5">
             <div class="row justify-content-between p-0 ">
@@ -62,6 +63,7 @@
             </div>
         </div>
     </section>
+-->
 
     <section class="section2 mb-5">
         <div class="container-fluid p-md-5">
@@ -70,7 +72,7 @@
                     <p class="quote text-center mb-5">WE AIM TO<br> PUSH FOR A SUSTAINABLE FUTURE</p>
                 </div>
 
-                <img class="col-md-4 img-fluid bg-img-vertical align-self-center position-relative hue2" src="img/landing/mobile/sektion2/mb-bw-baggrund.jpg" alt="">
+                <div class="position-relative"> <img class="col-md-4 img-fluid bg-img-vertical align-self-center position-relative hue2" src="img/landing/mobile/sektion2/mb-bw-baggrund.jpg" alt=""></div>
                 <img class="img-fluid bg-img-vertical align-self-center position2 position-absolute img-scroll2" src="img/landing/sektion2/forgrund.jpg" alt="">
 
             </div>
@@ -175,12 +177,12 @@
 
 
         /*POSITION-SCROLL-START*/
-                gsap.from(".img-scroll1", {
-                y: 200,
+        gsap.from(".img-scroll1", {
+            y: 200,
 
-                duration: 1,
+            duration: 1,
 
-                scrollTrigger: {
+            scrollTrigger: {
                 trigger: ".img-scroll1",
                 ease: "power2.inOut",
 
@@ -189,8 +191,8 @@
                 end: "center 40%",
                 scrub: true,
 
-                }
-                });
+            }
+        });
 
         gsap.from(".img-scroll2", {
             y: 150,
