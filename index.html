@@ -187,22 +187,229 @@
 
 
         /*POSITION-SCROLL-START*/
-        gsap.from(".img-scroll1", {
-            y: 500,
-
-            duration: 1,
-
-            scrollTrigger: {
-                trigger: ".img-scroll1",
-                ease: "power2.inOut",
 
 
-                start: "top 100%",
-                end: "center 40%",
-                scrub: true,
+        ScrollTrigger.matchMedia({
 
+            // desktop
+            "(min-width: 992px)": function() {
+
+                gsap.from(".img-scroll1", {
+                    y: 200,
+
+                    duration: 1,
+
+                    scrollTrigger: {
+                        trigger: ".img-scroll1",
+                        ease: "power2.inOut",
+
+
+                        start: "top 100%",
+                        end: "top 40%",
+                        scrub: true,
+
+                    }
+                });
+
+                gsap.from(".img-scroll3", {
+                    y: 300,
+
+                    duration: 1,
+
+                    scrollTrigger: {
+                        trigger: ".img-scroll3",
+                        ease: "power2.inOut",
+
+
+                        start: "top 100%",
+                        end: "top 1%",
+                        scrub: true,
+
+                    }
+                });
+
+                gsap.from(".img-scroll5", {
+                    y: 200,
+
+                    duration: 1,
+
+                    scrollTrigger: {
+                        trigger: ".img-scroll5",
+                        ease: "power2.inOut",
+
+                        markers: "true",
+                        start: "top 80%",
+                        end: "top 20%",
+                        scrub: true,
+
+                    }
+                });
+
+
+                // setup animations and ScrollTriggers for screens 800px wide or greater (desktop) here...
+                // These ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
+            },
+
+            // mobile
+            "(max-width: 991px)": function() {
+                gsap.from(".img-scroll1", {
+                    y: 500,
+
+                    duration: 1,
+
+                    scrollTrigger: {
+                        trigger: ".img-scroll1",
+                        ease: "power2.inOut",
+
+
+                        start: "top 100%",
+                        end: "center 40%",
+                        scrub: true,
+
+                    }
+                });
+
+                gsap.from(".img-scroll3", {
+                    y: 500,
+
+                    duration: 1,
+
+                    scrollTrigger: {
+                        trigger: ".img-scroll3",
+                        ease: "power2.inOut",
+
+
+                        start: "top 100%",
+                        end: "center 40%",
+                        scrub: true,
+
+                    }
+                });
+
+                gsap.from(".img-scroll5", {
+                    y: 500,
+
+                    duration: 1,
+
+                    scrollTrigger: {
+                        trigger: ".img-scroll5",
+                        ease: "power2.inOut",
+
+
+                        start: "top 100%",
+                        end: "center 40%",
+                        scrub: true,
+
+                    }
+                });
+
+                // The ScrollTriggers created inside these functions are segregated and get
+                // reverted/killed when the media query doesn't match anymore.
+            },
+
+            // all
+            "all": function() {
+
+                gsap.from(".hue0", {
+                    filter: 'grayscale(1)',
+                    duration: 0.3,
+                    scrollTrigger: {
+                        trigger: ".hue0",
+                        start: "top center",
+                        end: "60% center",
+
+                        scrub: true
+                    },
+                });
+
+                gsap.from(".hue1", {
+                    filter: 'grayscale(1)',
+                    duration: 0.3,
+                    scrollTrigger: {
+                        trigger: ".hue1",
+                        start: "top center",
+                        end: "60% center",
+
+                        scrub: true
+                    },
+                });
+
+                gsap.from(".hue2", {
+                    filter: 'grayscale(1)',
+                    duration: 0.3,
+                    scrollTrigger: {
+                        trigger: ".hue2",
+                        start: "top center",
+                        end: "60% center",
+
+                        scrub: true
+                    },
+                });
+
+                gsap.from(".hue3", {
+                    filter: 'grayscale(1)',
+                    duration: 0.3,
+                    scrollTrigger: {
+                        trigger: ".hue3",
+                        start: "top center",
+                        end: "60% center",
+
+                        scrub: true
+                    },
+                });
+
+                gsap.from(".hue4", {
+                    filter: 'grayscale(1)',
+                    duration: 0.3,
+                    scrollTrigger: {
+                        trigger: ".hue4",
+                        start: "top center",
+                        end: "60% center",
+
+                        scrub: true
+                    },
+                });
+
+                gsap.from(".hue5", {
+                    filter: 'grayscale(1)',
+                    duration: 0.3,
+                    scrollTrigger: {
+                        trigger: ".hue5",
+                        start: "top center",
+                        end: "60% center",
+
+                        scrub: true
+                    },
+                });
+
+                // ScrollTriggers created here aren't associated with a particular media query,
+                // so they persist.
             }
+
         });
+
+
+
+
+
+
+
+        //        gsap.from(".img-scroll1", {
+        // y: 500,
+        //
+        // duration: 1,
+        //
+        // scrollTrigger: {
+        // trigger: ".img-scroll1",
+        // ease: "power2.inOut",
+        //
+        //
+        // start: "top 100%",
+        // end: "center 40%",
+        // scrub: true,
+        //
+        // }
+        // });
 
         gsap.from(".img-scroll2", {
             y: 150,
@@ -221,22 +428,22 @@
             }
         });
 
-        gsap.from(".img-scroll3", {
-            y: 500,
-
-            duration: 1,
-
-            scrollTrigger: {
-                trigger: ".img-scroll3",
-                ease: "power2.inOut",
-
-
-                start: "top 100%",
-                end: "center 40%",
-                scrub: true,
-
-            }
-        });
+        //        gsap.from(".img-scroll3", {
+        //            y: 500,
+        //
+        //            duration: 1,
+        //
+        //            scrollTrigger: {
+        //                trigger: ".img-scroll3",
+        //                ease: "power2.inOut",
+        //
+        //
+        //                start: "top 100%",
+        //                end: "center 40%",
+        //                scrub: true,
+        //
+        //            }
+        //        });
 
         gsap.from(".img-scroll4", {
             y: 150,
@@ -255,22 +462,22 @@
             }
         });
 
-        gsap.from(".img-scroll5", {
-            y: 500,
-
-            duration: 1,
-
-            scrollTrigger: {
-                trigger: ".img-scroll5",
-                ease: "power2.inOut",
-
-
-                start: "top 100%",
-                end: "center 40%",
-                scrub: true,
-
-            }
-        });
+        //        gsap.from(".img-scroll5", {
+        //            y: 500,
+        //
+        //            duration: 1,
+        //
+        //            scrollTrigger: {
+        //                trigger: ".img-scroll5",
+        //                ease: "power2.inOut",
+        //
+        //
+        //                start: "top 100%",
+        //                end: "center 40%",
+        //                scrub: true,
+        //
+        //            }
+        //        });
 
         /*POSITION-SCROLL-SLUT*/
 
@@ -278,77 +485,77 @@
 
         /*GREYSCALE-CHANGE-START*/
 
-        gsap.from(".hue0", {
-            filter: 'grayscale(1)',
-            duration: 0.3,
-            scrollTrigger: {
-                trigger: ".hue0",
-                start: "top center",
-                end: "60% center",
-
-                scrub: true
-            },
-        });
-
-        gsap.from(".hue1", {
-            filter: 'grayscale(1)',
-            duration: 0.3,
-            scrollTrigger: {
-                trigger: ".hue1",
-                start: "top center",
-                end: "60% center",
-
-                scrub: true
-            },
-        });
-
-        gsap.from(".hue2", {
-            filter: 'grayscale(1)',
-            duration: 0.3,
-            scrollTrigger: {
-                trigger: ".hue2",
-                start: "top center",
-                end: "60% center",
-
-                scrub: true
-            },
-        });
-
-        gsap.from(".hue3", {
-            filter: 'grayscale(1)',
-            duration: 0.3,
-            scrollTrigger: {
-                trigger: ".hue3",
-                start: "top center",
-                end: "60% center",
-
-                scrub: true
-            },
-        });
-
-        gsap.from(".hue4", {
-            filter: 'grayscale(1)',
-            duration: 0.3,
-            scrollTrigger: {
-                trigger: ".hue4",
-                start: "top center",
-                end: "60% center",
-
-                scrub: true
-            },
-        });
-
-        gsap.from(".hue5", {
-            filter: 'grayscale(1)',
-            duration: 0.3,
-            scrollTrigger: {
-                trigger: ".hue5",
-                start: "top center",
-                end: "60% center",
-
-                scrub: true
-            },
-        });
+        //        gsap.from(".hue0", {
+        //            filter: 'grayscale(1)',
+        //            duration: 0.3,
+        //            scrollTrigger: {
+        //                trigger: ".hue0",
+        //                start: "top center",
+        //                end: "60% center",
+        //
+        //                scrub: true
+        //            },
+        //        });
+        //
+        //        gsap.from(".hue1", {
+        //            filter: 'grayscale(1)',
+        //            duration: 0.3,
+        //            scrollTrigger: {
+        //                trigger: ".hue1",
+        //                start: "top center",
+        //                end: "60% center",
+        //
+        //                scrub: true
+        //            },
+        //        });
+        //
+        //        gsap.from(".hue2", {
+        //            filter: 'grayscale(1)',
+        //            duration: 0.3,
+        //            scrollTrigger: {
+        //                trigger: ".hue2",
+        //                start: "top center",
+        //                end: "60% center",
+        //
+        //                scrub: true
+        //            },
+        //        });
+        //
+        //        gsap.from(".hue3", {
+        //            filter: 'grayscale(1)',
+        //            duration: 0.3,
+        //            scrollTrigger: {
+        //                trigger: ".hue3",
+        //                start: "top center",
+        //                end: "60% center",
+        //
+        //                scrub: true
+        //            },
+        //        });
+        //
+        //        gsap.from(".hue4", {
+        //            filter: 'grayscale(1)',
+        //            duration: 0.3,
+        //            scrollTrigger: {
+        //                trigger: ".hue4",
+        //                start: "top center",
+        //                end: "60% center",
+        //
+        //                scrub: true
+        //            },
+        //        });
+        //
+        //        gsap.from(".hue5", {
+        //            filter: 'grayscale(1)',
+        //            duration: 0.3,
+        //            scrollTrigger: {
+        //                trigger: ".hue5",
+        //                start: "top center",
+        //                end: "60% center",
+        //
+        //                scrub: true
+        //            },
+        //        });
 
         /*GREYSCALE-CHANGE-SLUT*/
 
